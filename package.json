@@ -1,6 +1,6 @@
 {
   "name": "format-email-address",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": "LinusU/format-email-address",
   "scripts": {
