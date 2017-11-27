@@ -15,15 +15,15 @@ npm install --save format-email-address
 ```js
 const formatEmailAddress = require('format-email-address')
 
-console.log(foarmtEmailAddress({ name: 'John', address: 'john@example.com' }))
+console.log(formatEmailAddress({ name: 'John', address: 'john@example.com' }))
 //=> John <john@example.com>
 
-console.log(foarmtEmailAddress({ name: 'John Smith', address: 'john@example.com' }))
+console.log(formatEmailAddress({ name: 'John Smith', address: 'john@example.com' }))
 //=> John Smith <john@example.com>
 
-console.log(foarmtEmailAddress({ name: 'Jack Sparrow, CPA', address: 'jack@example.com' }))
+console.log(formatEmailAddress({ name: 'Jack Sparrow, CPA', address: 'jack@example.com' }))
 //=> "Jack Sparrow, CPA" <jack@example.com>
 
-console.log(foarmtEmailAddress({ name: 'Linus Unnebäck', address: 'linus@folkdatorn.se' }))
+console.log(formatEmailAddress({ name: 'Linus Unnebäck', address: 'linus@folkdatorn.se' }))
 //=> =?utf-8?Q?Linus_Unneb=C3=A4ck?= <linus@folkdatorn.se>
 ```
