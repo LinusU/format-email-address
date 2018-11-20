@@ -14,5 +14,5 @@ const testCases = [
 ]
 
 for (const testCase of testCases) {
-  assert.equal(formatEmailAddress(testCase[0]), testCase[1])
+  assert.strictEqual(formatEmailAddress(testCase[0]), testCase[1])
 }
