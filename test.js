@@ -2,6 +2,8 @@ const assert = require('assert')
 const formatEmailAddress = require('./')
 
 const testCases = [
+  [{ address: 'foo@example.com' }, 'foo@example.com'],
+  [{ name: '', address: 'foo@example.com' }, 'foo@example.com'],
   [{ name: 'John', address: 'john@example.com' }, 'John <john@example.com>'],
   [{ name: 'John Smith', address: 'john@example.com' }, 'John Smith <john@example.com>'],
   [{ name: 'Jack Sparrow, CPA', address: 'jack@example.com' }, '"Jack Sparrow, CPA" <jack@example.com>'],

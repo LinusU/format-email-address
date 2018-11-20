@@ -10,6 +10,8 @@ function quote (input) {
 }
 
 module.exports = function formatEmailAddress (input) {
+  if (!input.name) return input.address
+
   if (needQEncoding.test(input.name)) return `${qEncode(input.name)} <${input.address}>`
   if (needQuotes.test(input.name)) return `${quote(input.name)} <${input.address}>`
 
